@@ -33,33 +33,36 @@
 
 ### 페이지 구성
 
--   Main
-    ![MainPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/Main.png)
+- Main
+  ![MainPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/Main.png)
 
-    -   최신 블록 리스트를 실시간으로 출력해 클릭시 블록 정보 페이지로 넘어감
-    -   Mining Start 버튼으로 채굴 시작할 수 있다. 클릭하면 Mining Stop 으로 버튼의 이름과 색상이 바뀐다.
-    -   원하는 번호의 블록을 검색/조회 할 수 있다.
-        <br/>
-        <br/>
-        <br/>
+  - 최신 블록 리스트를 실시간으로 출력.
+  - 블록 정보 페이지로 이동할 수 있게 클릭 이벤트 구현
+  - Mining Start 버튼으로 채굴 시작.
+    <br/>클릭하면 Mining Stop 으로 버튼의 이름과 색상 변경.
+  - 원하는 번호의 블록 검색/조회 기능 구현.
+    <br/>
+    <br/>
+    <br/>
 
--   Block
-    ![BlockPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/Block.png)
+- Block
+  ![BlockPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/Block.png)
 
-    -   선택한 블록의 정보를 보여준다.
-    -   아래 버튼을 클릭하면 해당 블록의 트랜잭션 목록을 보여주고 클릭하면 해당 트랜잭션의 정보를 보여주는 페이지로 넘어간다.
-        <br/>
-        <br/>
-        <br/>
+  - 선택한 블록의 정보를 출력.
+  - 아래 버튼 클릭시 해당 블록의 트랜잭션 목록을 출력.
+    <br/>해당 트랜잭션의 정보를 보여주는 페이지로 넘어가는 클릭 이벤트 기능 구현.
+    <br/>
+    <br/>
+    <br/>
 
--   TxInfo
-    ![TxInfoPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/TxInfo.png)
-    -   Block 페이지에서 선택한 트랜잭션의 정보를 보여준다.
+- TxInfo
+  ![TxInfoPage](https://raw.githubusercontent.com/Poltia/EtherSacn/main/imgs/TxInfo.png)
+  - Block 페이지에서 선택한 트랜잭션의 정보를 출력.
 
 #
 
 ### 이슈
 
--   버튼으로 채굴 시작/정지 구현하기
-    -   블록과 트랜잭션 정보는 web3.js를 사용해서 가져왔는데, 이부분은 web3.js로 구현할 수 없어서
-        axios로 요청을 보냄으로 해결
+- 이슈 : 버튼으로 채굴 시작/정지 구현하기
+  - 해결
+    <br>블록과 트랜잭션 정보는 web3.js를 사용해서 가져왔는데, 이부분은 web3.js로 구현할 수 없어서 axios로 요청을 보냄으로 해결

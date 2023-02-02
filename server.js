@@ -1,6 +1,4 @@
 const express = require("express");
-const session = require("express-session");
-const http = require("http");
 const Web3 = require("web3");
 const cors = require("cors");
 const { sequelize, Block } = require("./sequelize");
